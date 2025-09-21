@@ -1,3 +1,40 @@
+# #include <iostream>
+# using namespace std;
+#
+# int main() {
+#     int day;
+#     cout << "Enter a number 1-7 that represents part of the week\n";
+#     cin >> day;
+#
+#     if (day < 1 || day > 7) {
+#         cout << "Error! Invalid day\n";
+#         return 0;
+#     }
+#
+#     switch(day) {
+#         case 1: 
+#				cout << "Mantaha\n"; break;
+#         case 2: 
+#				cout << "Labobeli\n"; 
+#				break;
+#         case 3: 
+#				cout << "Laboraro\n"; 
+#				break;
+#         case 4: 
+#				cout << "Labone\n"; 
+#				break;
+#         case 5: 
+#				cout << "Labohlano\n"; 
+#				break;
+#         case 6: 
+#				cout << "Moqebelo\n"; 
+#				break;
+#         case 7: 
+#				cout << "Sontaha\n"; 
+#				break;
+#     }
+#     return 0;
+# }
 .data
 	prompt: .asciz "Enter a number 1-7 that reprents part of the week\n"
 	error: .asciz "Error! Invalid day\n"
