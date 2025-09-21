@@ -1,10 +1,31 @@
+# #include <iostream>
+# using namespace std;
+#
+# int main() {
+#     int cattle;
+#     cout << "U tlo lefa mahali a khomo tse kae?\n";
+#     cin >> cattle;
+#
+#     if (cattle < 0) {
+#         cout << "Error! Cannot in any way pay less than zero cattle\n";
+#     } else if (cattle <= 15) {
+#         cout << "Not enough for bohali\n";
+#     } else if(cattle > 15 && cattle <= 30){
+#         cout << "Small herd\n";
+#     }
+#     } else{//cattle>30
+#         cout << "Wealthy cattle owner\n";
+#	  }
+#
+#     return 0;
+# }
 # Mahali classification
 .data
 	prompt: .asciz "U tlo lefa mahali a khomo tse kae?\n"
 	error: .asciz "Error! Cannot in any many pay less than zero cattle\n"
 	print_rich: .asciz "Wealthy cattle owner\n" #print if var > 30
-	print_poor: .asciz "Not enough for bohali\n" #print if var > 15
-	print_middle: .asciz "Small herd\n" #print if var <= 15
+	print_poor: .asciz "Not enough for bohali\n" #print if var <= 15
+	print_middle: .asciz "Small herd\n" #print if var > 15 & var <= 30
 .text
 .globl main
 main:
