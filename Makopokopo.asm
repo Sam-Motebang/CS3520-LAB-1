@@ -1,4 +1,4 @@
-#Given a quantity of grains in litres, determine and display how many makopokopo (20L) it makes and how much remains
+#202322654 Motebang
 # #include <iostream>
 # using namespace std;
 #
