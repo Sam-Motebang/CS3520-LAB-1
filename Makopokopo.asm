@@ -1,4 +1,25 @@
 #Given a quantity of grains in litres, determine and display how many makopokopo (20L) it makes and how much remains
+# #include <iostream>
+# using namespace std;
+#
+# int main() {
+#     int litres;
+#     cout << "Enter quantity of grains in litres\n";
+#     cin >> litres;
+#
+#     if (litres < 0) {
+#         cout << "Error! We cannot have a quantity of less than zero\n";
+#         return 0;
+#     }
+#
+#     int makopokopo = litres / 20;   // quotient
+#     int remainder  = litres % 20;   // remainder
+#
+#     cout << "Number of makopokopo(20L) is: " << makopokopo;
+#     cout << "\nRemaining litres: " << remainder;
+#
+#     return 0;
+# }
 .data
 	prompt: .asciz "Enter quantity of grains in litres\n"
 	print_error: .asciz "Error! We cannot have a quantity of less than zero\n"
