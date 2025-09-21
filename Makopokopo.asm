@@ -1,4 +1,3 @@
-#202322654 Motebang
 # #include <iostream>
 # using namespace std;
 #
